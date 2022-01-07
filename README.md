@@ -8,7 +8,9 @@
 ### Install Plantuml
 - Mac
   + brew install plantuml  
-
+### Install psycopg2 with postgresAPP
+- export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/12/bin/
+- pip install psycopg2
 ### switch xci config
 ```
 Add the kip1 patch under the launch options for CFW. Here is an example.
