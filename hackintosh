@@ -1,0 +1,2 @@
+2023-01-07 12:13:11 +0800 DarkWake            	DarkWake from Normal Sleep [CDN] : due to RTC XDCI CNVW/Maintenance Using AC (Charge:0%) 46 secs
+soloved:sudo pmset -a TCPKEEPALIVE 0
