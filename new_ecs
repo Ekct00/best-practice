@@ -1,0 +1,13 @@
+fdisk -l
+fdisk /dev/vdb
+mkfs -t ext4 /dev/vdb
+mkdir /data
+mount -t ext4 /dev/vdb /data
+mount
+useradd -m ubuntu
+vim /etc/sudoers
+ubuntu  ALL=(ALL:ALL) NOPASSWD: ALL
+vim /etc/passwd
+ubuntu:x:1000:1000::/home/ubuntu:/bin/bash
+cd /home
+ln -s /data/ubuntu ./
