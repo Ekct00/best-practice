@@ -5,7 +5,7 @@ mkdir /data
 mount -t ext4 /dev/vdb /data
 mount
 useradd -m ubuntu
-vim /etc/sudoers
+sudo visudo
 ubuntu  ALL=(ALL:ALL) NOPASSWD: ALL
 vim /etc/passwd
 ubuntu:x:1000:1000::/home/ubuntu:/bin/bash
