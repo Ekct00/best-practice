@@ -4,6 +4,10 @@ mkfs -t ext4 /dev/vdb
 mkdir /data
 mount -t ext4 /dev/vdb /data
 mount
+blkid /dev/vdb
+vim /etc/fstab
+UUID=1234-1234-1234 /data ext4 defaults 0 0
+lsblk
 useradd -m ubuntu
 sudo visudo
 ubuntu  ALL=(ALL:ALL) NOPASSWD: ALL
